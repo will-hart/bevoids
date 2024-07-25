@@ -483,12 +483,7 @@ mod systems {
                                     .truncate()
                                     .rotate(Vec2::from_angle(angle_radians))
                                     * boid.view_config.view_range,
-                                Color::Rgba {
-                                    red: 1.0,
-                                    green: 0.0,
-                                    blue: 0.0,
-                                    alpha: 0.01,
-                                },
+                                Color::srgba(1.0, 0.0, 0.0, 0.1),
                             );
                         }
                     }
@@ -508,12 +503,7 @@ mod systems {
                                     .rotate(Vec2::from_angle(angle_radians))
                                     .extend(0.0)
                                     * boid.view_config.view_range,
-                                Color::Rgba {
-                                    red: 1.0,
-                                    green: 0.0,
-                                    blue: 0.0,
-                                    alpha: 0.1,
-                                },
+                                Color::srgba(1.0, 0.0, 0.0, 0.1),
                             );
                         }
                     }
